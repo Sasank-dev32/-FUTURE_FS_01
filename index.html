@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sasank | Full Stack Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <h2 class="logo">Sasank</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="hero">
+    <h1>Hi, I'm Sasank 👋</h1>
+    <p>Full Stack Web Developer Intern</p>
+    <button onclick="scrollToContact()">Hire Me</button>
+</section>
+
+<section id="about" class="hidden">
+    <h2>About Me</h2>
+    <p>
+        I am a Computer Science student passionate about building modern web applications.
+        I enjoy working with frontend and backend technologies to create real-world solutions.
+    </p>
+</section>
+
+<section id="skills" class="hidden">
+    <h2>Skills</h2>
+    <div class="skill-container">
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">Node.js</div>
+        <div class="card">Git & GitHub</div>
+    </div>
+</section>
+
+<section id="projects" class="hidden">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>Mini CRM System</h3>
+        <p>A simple lead management application built using Node.js.</p>
+    </div>
+    <div class="project">
+        <h3>Business Website</h3>
+        <p>A responsive website developed for a local business.</p>
+    </div>
+</section>
+
+<section id="contact" class="hidden">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Sasank | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

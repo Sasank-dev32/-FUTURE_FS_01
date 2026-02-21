@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0a0a0a;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.6);
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00f5d4;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00f5d4, #9b5de5);
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+section {
+    padding: 100px 8%;
+}
+
+.skill-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 20px 40px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: #00f5d4;
+    color: black;
+}
+
+.project {
+    background: #111;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+}
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        gap: 15px;
+        font-size: 14px;
+    }
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
